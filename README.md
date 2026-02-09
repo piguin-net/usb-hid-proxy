@@ -26,5 +26,27 @@ flowchart TD
 マウスはElecomの[M-HT1DRBK](https://www.elecom.co.jp/products/M-HT1DRBK.html)または[M-HT1URBK](https://www.elecom.co.jp/products/M-HT1URBK.html)を対象にしています。  
 古いロットはreportがおかしいのか、正常に動作しません。  
 
-Raspberry Pi PicoはAdafruitの[Adafruit Feather RP2040 with USB Type A Host](https://www.adafruit.com/product/5723)を対象にしています。  
+Raspberry Pi PicoはAdafruitの[Adafruit Feather RP2040 with USB Type A Host](https://www.switch-science.com/products/8956)を対象にしています。  
 他のRaspberry Pi Picoを利用する場合は"PIN_USB_HOST_DP"を変更する必要があります。
+
+# 環境構築(Arduino IDE)
+
+1. File -> Preferences -> Additional boards manager URLs  
+  ```https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json```
+
+1. Tools -> Board -> Boards Manager  
+  ```Raspberry Pi Pico/RP2040/RP2350```
+
+1. Tools -> Board  
+  ```Adafruit Feather USB Host```
+
+1. Tools -> Manage Libraries  
+  ```Adafruit TinyUSB Library```
+  ```Pico PIO USB```
+
+1. Tools -> USB Stack  
+  ```Adafruit TinyUSB```
+
+# TODO
+
+* 開発環境をArduino IDEからPlatformIOなどへ変更

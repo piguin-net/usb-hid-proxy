@@ -27,7 +27,8 @@ flowchart TD
 古いロットはreportがおかしいのか、正常に動作しません。  
 
 Raspberry Pi PicoはAdafruitの[Adafruit Feather RP2040 with USB Type A Host](https://www.switch-science.com/products/8956)を対象にしています。  
-他のRaspberry Pi Picoを利用する場合は"PIN_USB_HOST_DP"を変更する必要があります。
+他のRaspberry Pi Picoを利用する場合は[PIN_USB_HOST_DP](https://github.com/piguin-net/usb-hid-proxy/blob/main/main/usbh_helper.h#L21)を変更する必要があります。
+(例えば[Picossci USBホスト](https://www.switch-science.com/products/9158)の場合、"PIN_USB_HOST_DP"は"0")
 
 # 環境構築(Arduino IDE)
 
